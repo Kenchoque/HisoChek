@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HisoChek.Nosotros"
+             Title="Conocenos y Habla con nosotros">
+        
+        <StackLayout VerticalOptions="CenterAndExpand"
+                                         HorizontalOptions="CenterAndExpand">
+        <Button Text="Necesitas ayuda? Contactanos" Clicked="OpenWhatsApp"/>
+        <ScrollView>
+            <StackLayout BackgroundColor="Black">
+
+                <StackLayout>
+                    <Label Text=" " VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <Frame CornerRadius="15"
+                           HeightRequest="500"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"
+                           HasShadow="False">
+                        <StackLayout BackgroundColor="White" >
+                            <Label Text="Quienes Somos?"
+                                   FontSize="Large"
+                                   HorizontalOptions="Center"
+                                   TextColor="Black"/>
+                            <Image Source="https://i.ibb.co/dgX2twJ/empresa.png"
+                                   HeightRequest="300"
+                                   WidthRequest="300"/>
+                            <Label Text="Nuestra misión como empresa es lograr la satisfacción total de las necesidades y expectativas de nuestros clientes, brindándoles productos de primera calidad, pero lo más importante prestándoles un excelente servicio"
+                                   HorizontalOptions="Center"
+                                   TextColor="Black"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text=" " VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <Frame CornerRadius="15"
+                           HeightRequest="500"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"
+                           HasShadow="False">
+                        <StackLayout BackgroundColor="White" >
+                            <Label Text="Que queremos lograr?"
+                                   FontSize="Large"
+                                   HorizontalOptions="Center"
+                                   TextColor="Black"/>
+                            <Image Source="https://i.ibb.co/2ZrqG4r/vision.png"
+                                   HeightRequest="300"
+                                   WidthRequest="300"/>
+                            <Label Text="Nuestra visión es ser los más grandes líderes de venta de productos artísticos, ofrecer los productos más innovadores en el mercado y que sean de buena calidad, adelantándonos a las necesidades de todas las personas."
+                                   HorizontalOptions="Center"
+                                   TextColor="Black"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text=" " VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <Frame CornerRadius="15"
+                           HeightRequest="500"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"
+                           HasShadow="False">
+                        <StackLayout BackgroundColor="White" >
+                            <Label Text="Eres importante"
+                                   FontSize="Large"
+                                   HorizontalOptions="Center"
+                                   TextColor="Black"/>
+                            <Image Source="https://i.ibb.co/hWXq0yJ/importante.png"
+                                   HeightRequest="300"
+                                   WidthRequest="300"/>
+                            <Label Text="Porque sabemos que siempre tu opinion es lo que importa, Envianos comentarios a nuestro haciendo click en el boton de contactanos; con gusto leeremos tus comentario y absolveremos tus preguntas, estaremos atendiendote las 24 horas de los 7 dias de la semana."
+                                   HorizontalOptions="Center"
+                                   TextColor="Black"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+          
+</ContentPage>

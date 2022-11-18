@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HisoChek"
+             Title="FlyoutMenu"
+             x:Class="HisoChek.FlyoutMenuPage">
+    <StackLayout BackgroundColor="Black">
+        <ListView x:Name="listview" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:FlyoutItemPage}">
+                    <local:FlyoutItemPage Titulo="Inicio" Icono="https://i.ibb.co/0mCxFdX/Inicio1.jpg" TargetPage="{x:Type local:Inicio}"/>
+                    <local:FlyoutItemPage Titulo="Tienda" Icono="https://i.ibb.co/W58yHJw/Tienda1.jpg" TargetPage="{x:Type local:Tienda}"/>
+                    <local:FlyoutItemPage Titulo="Carrito" Icono="https://i.ibb.co/6bB04P5/carrito.jpg" TargetPage="{x:Type local:Carrito}"/>
+                    <local:FlyoutItemPage Titulo="Nosotros" Icono="https://i.ibb.co/n16HC8T/nosotros.jpg" TargetPage="{x:Type local:Nosotros}"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Icono}"/>
+                            <Label Grid.Column="1" Text="{Binding Titulo}"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
